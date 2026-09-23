@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>832402203陈嘉源的计算器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="app">
+    <h1>832402203陈嘉源的计算器</h1>
+
+    <div class="workspace">
+      <section class="calculator">
+        <div class="display">
+          <p class="expression">0</p>
+
+          <div class="result-row">
+            <p class="result">0</p>
+            <button type="button" id="copyResult" class="copy-result">
+              复制结果
+            </button>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="button" class="button function" data-action="clear">
+            C
+          </button>
+          <button type="button" class="button function" data-action="delete">
+            ⌫
+          </button>
+          <button type="button" class="button function input" data-value="(">
+            (
+          </button>
+          <button type="button" class="button function input" data-value=")">
+            )
+          </button>
+
+          <button type="button" class="button input" data-value="7">7</button>
+          <button type="button" class="button input" data-value="8">8</button>
+          <button type="button" class="button input" data-value="9">9</button>
+          <button type="button" class="button operator input" data-value="/">
+            ÷
+          </button>
+
+          <button type="button" class="button input" data-value="4">4</button>
+          <button type="button" class="button input" data-value="5">5</button>
+          <button type="button" class="button input" data-value="6">6</button>
+          <button type="button" class="button operator input" data-value="*">
+            ×
+          </button>
+
+          <button type="button" class="button input" data-value="1">1</button>
+          <button type="button" class="button input" data-value="2">2</button>
+          <button type="button" class="button input" data-value="3">3</button>
+          <button type="button" class="button operator input" data-value="-">
+            −
+          </button>
+
+          <button type="button" class="button input" data-value="0">0</button>
+          <button type="button" class="button input" data-value=".">.</button>
+          <button type="button" class="button equals" data-action="calculate">
+            =
+          </button>
+          <button type="button" class="button operator input" data-value="+">
+            +
+          </button>
+        </div>
+
+        <p id="calculatorMessage" class="calculator-message"></p>
+      </section>
+
+      <section class="history-panel">
+        <div class="history-header">
+          <h2>计算历史</h2>
+          <button type="button" id="clearHistory" class="clear-history">
+            清空
+          </button>
+        </div>
+
+        <p id="historyStatus" class="history-status">正在加载……</p>
+        <ul id="historyList" class="history-list"></ul>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
