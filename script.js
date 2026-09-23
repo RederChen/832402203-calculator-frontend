@@ -152,7 +152,10 @@ async function calculate() {
     const body = await response.json();
 
     if (!response.ok) {
-      throw new Error(body.message || "计算失败");
+      resultDisplay.textContent = "Error";
+      calculatorMessage.textContent =
+        body.message || "计算失败";
+      return;
     }
 
     currentResult = body.data.result;
@@ -172,6 +175,7 @@ async function calculate() {
     equalsButton.disabled = false;
   }
 }
+
 
 async function copyCurrentResult() {
   if (resultDisplay.textContent === "Error") {
