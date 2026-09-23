@@ -3,8 +3,8 @@
 Front-end implementation of the calculator developed for the Software Engineering course assignment.
 
 **Student:** Chen Jiayuan  
-**Student ID:** 832402203
-
+**Student FZUID:** 832402203
+**Student MUID:** 24125415
 ## Overview
 
 The project uses a front-end/back-end architecture. This repository contains only the user interface and browser-side interaction. Mathematical expressions are sent to the back end through HTTP requests, while calculation, validation, and history storage are handled by the server.
