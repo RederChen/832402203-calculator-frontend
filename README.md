@@ -5,6 +5,15 @@ Front-end implementation of the calculator developed for the Software Engineerin
 **Student:** Chen Jiayuan  
 **FZUID:** 832402203
 **MUID:** 24125415
+
+## Online version
+
+https://rederchen.github.io/832402203-calculator-frontend/
+
+Back-end API:
+
+https://eight32402203-calculator-backend.onrender.com
+
 ## Overview
 
 The project uses a front-end/back-end architecture. This repository contains only the user interface and browser-side interaction. Mathematical expressions are sent to the back end through HTTP requests, while calculation, validation, and history storage are handled by the server.
