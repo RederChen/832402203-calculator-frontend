@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://eight32402203-calculator-backend.onrender.com";
 
 const expressionDisplay = document.querySelector(".expression");
 const resultDisplay = document.querySelector(".result");
